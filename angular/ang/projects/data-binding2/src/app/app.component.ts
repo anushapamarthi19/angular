@@ -26,7 +26,8 @@ export class AppComponent {
     }
   }
   inputchange(e:Event){
-    this.inp=((e.target as HTMLInputElement).value)
+    console.log(e)
+    this.inp=(e.target as HTMLInputElement).value;
     console.log(this.inp);
   }
 }
