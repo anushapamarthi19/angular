@@ -143,8 +143,9 @@ type mul2=(a:number,b:number)=>number
 const m:mul2=(p,q)=>p*q
 
 
-
-
+// type Persons = "raj" | "geetha" | "jessi" | "john";
+// type work="teacher" | "plumber" | "student" | "writer"
+// const note:Record<Persons,work>={raj:"plumber"}
 
 
 

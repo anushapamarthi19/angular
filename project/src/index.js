@@ -65,3 +65,38 @@ function sub(a, b) {
 const myCar = { model: "camry", manufacturer: "toyota", year: 2022 };
 const employee1 = { name: "raj", salary: 200, id: 1526 };
 const m1 = { name: "ram", salary: 50000, id: 2345, team: 5 };
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+        this.name = "raj";
+    }
+    area() {
+        return Math.PI * this.radius * this.radius;
+    }
+}
+const myCircle = new Circle(5);
+console.log(myCircle.area());
+let obj = { name: "raj", rno: 25, phno: 252525 };
+//everything is one object
+//class is a collection of objects
+//let obj = new Classname()
+class School {
+    constructor() {
+        this.name = "";
+        this.rno = 25;
+        this.phno = 5555;
+    }
+    test() {
+        console.log("hello");
+    }
+}
+let obj2 = new School();
+let k = 25;
+let obj5 = { name: "", rno: 50, phno: 52 };
+let value5 = "success";
+function fun(a) {
+    return a * 5;
+}
+const fun2 = (a) => a * 5;
+const fun3 = (b) => b * 10;
+const m = (p, q) => p * q;
