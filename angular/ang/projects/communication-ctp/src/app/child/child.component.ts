@@ -7,22 +7,16 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class ChildComponent {
 
-@Output() myEvent=new EventEmitter();
-data={
-  name:"raj",
-  age:20
-}
-count=0;
-message!:"I'm good"
-counter()
+ @Output() myEvent=new EventEmitter();
+ count=0;
+ childFun()
+ {
+  const data="hello world";
+     this.myEvent.emit(data);
+ }
+incr()
 {
-  this.count++
-}
-inp=''
-  fun()
-{
-  const message="hello everyone"
-  console.log("button clicked")
-  this.myEvent.emit(this.inp)
+this.count++;
 }
 }
+

@@ -1,0 +1,33 @@
+<!--<div>
+     <h1>Angular Main Component</h1>
+ <div class="myclass" *ngIf="Login as value; else loginMessage">{{value}}</div>
+ <ng-template #afterloginmessage>Hello Admin!</ng-template>
+ <ng-template #loginMessage>Please Login...</ng-template>
+ simple if
+ <button (click)="show=!show">{{show?hide':'show'}}</button>
+ <ng-template *ngIf="show then show1 else show2">
+Something.....</div>
+</ng-template>
+<ng-template #show1>This is the show</ng-template>
+<ng-template #show2>Nothing to show</ng-template> -->
+
+
+<!-- <div *ngIf="showDiv">Hiii</div>
+ <div [ngSwitch]="x">
+  <div [ngSwitch]="days"> 
+    <div *ngSwitchCase="0">Sunday</div>
+    <div *ngSwitchCase="1">Monday</div>
+    <div *ngSwitchCase="2">Tuesday</div>
+    <div *ngSwitchDefault>Some other day</div>
+    
+  </div>
+<div *ngSwitchCase="3">
+<div *ngSwitchCase="4">My Value is 4</div>
+<div *ngSwitchDefault>This is Default</div>
+</div>  -->
+<div>
+<!--ngFor-->
+<div *ngFor="let item of items; let i=index;let o=odd;let e=even;">
+This is 6 times of item:{{item*6}}
+</div>
+

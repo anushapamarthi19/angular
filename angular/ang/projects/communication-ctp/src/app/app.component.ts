@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { ChildComponent } from './child/child.component';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'communication-ctp';
-  msg=''
-  met(name:String){
-    console.log(name)
-  }
-  fun2(m:any)
+  @ViewChild(ChildComponent) child!: ChildComponent;
+  @ViewChildren(ChildComponent) children!: ChildComponent;
+  message!:string;
+  parentFun(m:string)
   {
-this.msg=m;
+    this.message=m;
   }
-}
+  parentFun2()
+  {
+    this.child.incr();
+    console.log(this.children);
+    console.log(this.child.count);
+  }
+  }
