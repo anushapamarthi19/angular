@@ -1,0 +1,10 @@
+<div>
+  <h1>Main Component</h1>
+  <div *ngFor="let i of items;let in =index;trackBy:fun">
+    element is {{i}} and index is {{in}}
+    items
+    <div *ngFor="let keyValuePair of obj|keyvalue"><!--pipes-->
+      {{keyValuePair.key}}:{{keyValuePair.value}}
+      </div>
+    <div *TrackBy></div>
+</div>

@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'structured-if';
   showDiv=true;
+  isLogin=true;  
+  afterloginmessage='';
+  show=false;
   x=3;
   days=0
   constructor(){
